@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cron": "^3.1.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.4.0",
+    "mongoose": "7.6.3"
+  },
+  "name": "collecttracks",
+  "version": "1.0.0",
+  "description": "Determine the song of the week and add it to the user's playlist on a cronjob",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "jest"
+  },
+  "author": "Wendy Li",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3"
+  }
+}

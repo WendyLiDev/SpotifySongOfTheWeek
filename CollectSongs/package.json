@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "cron": "^3.1.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.4.0",
+    "mongoose": "7.6.3",
+    "spotify-web-api-node": "^4.0.0"
+  },
+  "name": "collecttracks",
+  "version": "1.0.0",
+  "description": "Collect spotify track plays on a cronjob",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "Wendy Li",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
