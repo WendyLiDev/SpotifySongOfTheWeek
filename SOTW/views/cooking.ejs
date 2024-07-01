@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Your playlist is now Cookin'</title>
+        <link type="text/css" href="css/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="window">
+            <div id="topBar">
+                <span id = "topBarTitle">sotw.exe</span>
+                <span id = "closeButton">
+                    X 
+                </span>
+            </div>
+            <div id="windowContent">
+                <h4>Your playlist is now cooking, keep listening to music and your playlist will be created as soon as we have your first song of the week for you!</h4>
+                <% if (data) { %>
+                    <div id="recentlyPlayed">
+                        <h1>Your recently played tracks:</h1>
+                        <div id="recentlyPlayedTracks">
+                            <ul>
+                                <% data.forEach(function(item) { %>
+                                    <li><%= item %></li>
+                                <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+            
+        </div>
+        <script src="js/cooking.js"></script>
+        <script src="js/background.js"></script>
+    </body>
+</html>
